@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC024EC8-32F4-4657-A2CB-14D2B3A931F8}</ProjectGuid>
+    <RootNamespace>NewTrainingFramework</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\BIN\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\BIN\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)GameManager;$(ProjectDir)GameObject;$(SolutionDir)SDL2\Include;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_ttf.lib;libEGL.lib;libGLESv2.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SDL2\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Core;$(ProjectDir)GameManager;$(ProjectDir)GameObject;$(SolutionDir)SDL2\Include;$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)SDL2\Lib;$(SolutionDir)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_ttf.lib;libEGL.lib;libGLESv2.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameManager\SoundManager.cpp" />
+    <ClCompile Include="GameObject\Camera.cpp" />
+    <ClCompile Include="GameObject\GameButton.cpp" />
+    <ClCompile Include="GameObject\Model.cpp" />
+    <ClCompile Include="Core\NewTrainingFramework.cpp" />
+    <ClCompile Include="GameObject\Object.cpp" />
+    <ClCompile Include="GameManager\ResourceManager.cpp" />
+    <ClCompile Include="GameManager\SceneManager.cpp" />
+    <ClCompile Include="GameManager\GameStateBase.cpp" />
+    <ClCompile Include="GameManager\GameStateMachine.cpp" />
+    <ClCompile Include="GameManager\GSIntro.cpp" />
+    <ClCompile Include="GameManager\GSMenu.cpp" />
+    <ClCompile Include="GameManager\GSPlay.cpp" />
+    <ClCompile Include="GameObject\AnimationManager.cpp" />
+    <ClCompile Include="GameObject\Character.cpp" />
+    <ClCompile Include="GameObject\CharacterAnimation.cpp" />
+    <ClCompile Include="GameObject\CharacterCombat.cpp" />
+    <ClCompile Include="GameObject\CharacterHitbox.cpp" />
+    <ClCompile Include="GameObject\CharacterMovement.cpp" />
+    <ClCompile Include="GameObject\WallCollision.cpp" />
+    <ClCompile Include="GameObject\InputManager.cpp" />
+    <ClCompile Include="GameObject\EnergyOrbProjectile.cpp" />
+    <ClCompile Include="GameObject\Shaders.cpp" />
+    <ClCompile Include="GameObject\TeleportCollision.cpp" />
+    <ClCompile Include="Core\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GameObject\Texture2D.cpp" />
+    <ClCompile Include="GameObject\PlatformCollision.cpp" />
+    <ClCompile Include="GameObject\LadderCollision.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameObject\Camera.h" />
+    <ClInclude Include="GameObject\GameButton.h" />
+    <ClInclude Include="Core\Globals.h" />
+    <ClInclude Include="GameObject\Model.h" />
+    <ClInclude Include="GameObject\Object.h" />
+    <ClInclude Include="GameManager\ResourceManager.h" />
+    <ClInclude Include="GameManager\SceneManager.h" />
+    <ClInclude Include="GameManager\StateType.h" />
+    <ClInclude Include="GameManager\GameStateBase.h" />
+    <ClInclude Include="GameManager\GameStateMachine.h" />
+    <ClInclude Include="GameManager\GSIntro.h" />
+    <ClInclude Include="GameManager\GSMenu.h" />
+    <ClInclude Include="GameManager\GSPlay.h" />
+    <ClInclude Include="GameObject\AnimationManager.h" />
+    <ClInclude Include="GameObject\Character.h" />
+    <ClInclude Include="GameObject\CharacterAnimation.h" />
+    <ClInclude Include="GameObject\CharacterCombat.h" />
+    <ClInclude Include="GameObject\CharacterHitbox.h" />
+    <ClInclude Include="GameObject\CharacterMovement.h" />
+    <ClInclude Include="GameObject\WallCollision.h" />
+    <ClInclude Include="GameObject\LadderCollision.h" />
+    <ClInclude Include="GameObject\TeleportCollision.h" />
+    <ClInclude Include="GameObject\InputManager.h" />
+    <ClInclude Include="GameObject\Shaders.h" />
+    <ClInclude Include="GameObject\EnergyOrbProjectile.h" />
+    <ClInclude Include="Core\stdafx.h" />
+    <ClInclude Include="Core\targetver.h" />
+    <ClInclude Include="GameObject\Texture2D.h" />
+    <ClInclude Include="GameObject\Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Readme.doc" />
+    <None Include="..\Resources\Shaders\TriangleShaderFS.fs" />
+    <None Include="..\Resources\Shaders\TriangleShaderVS.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.vcxproj">
+      <Project>{0d44529e-f7dd-4454-8ead-9afd857f53b4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

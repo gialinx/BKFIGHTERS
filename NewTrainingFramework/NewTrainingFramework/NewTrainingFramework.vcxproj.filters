@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManager">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{626bcf2d-a267-4d2f-93bb-60f6da286a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{c2de155c-5795-435c-8d67-15b1d43d5b3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Core Files -->
+    <ClCompile Include="Core\NewTrainingFramework.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\stdafx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <!-- GameManager Files -->
+    <ClCompile Include="GameManager\ResourceManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\SceneManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GameStateBase.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GameStateMachine.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GSIntro.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GSMenu.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\GSPlay.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <!-- GameObject Files -->
+    <ClCompile Include="GameObject\Object.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameButton.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Model.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Texture2D.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Shaders.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Camera.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager\SoundManager.cpp" />
+    <ClCompile Include="GameObject\Character.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\CharacterCombat.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\CharacterHitbox.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\CharacterMovement.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\AnimationManager.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\InputManager.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\CharacterAnimation.cpp" />
+    <ClCompile Include="GameObject\WallCollision.cpp" />
+    <ClCompile Include="GameObject\EnergyOrbProjectile.cpp" />
+    <ClCompile Include="GameObject\TeleportCollision.cpp" />
+    <ClCompile Include="GameObject\PlatformCollision.cpp" />
+    <ClCompile Include="GameObject\LadderCollision.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Core Headers -->
+    <ClInclude Include="Core\Globals.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\stdafx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\targetver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <!-- GameManager Headers -->
+    <ClInclude Include="GameManager\ResourceManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\SceneManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\StateType.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GameStateBase.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GameStateMachine.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GSIntro.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GSMenu.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager\GSPlay.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <!-- GameObject Headers -->
+    <ClInclude Include="GameObject\Object.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameButton.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Model.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Texture2D.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Shaders.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Camera.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Vertex.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Character.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\CharacterCombat.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\CharacterHitbox.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\CharacterMovement.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\AnimationManager.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\InputManager.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\CharacterAnimation.h" />
+    <ClInclude Include="GameObject\WallCollision.h" />
+    <ClInclude Include="GameObject\LadderCollision.h" />
+    <ClInclude Include="GameObject\TeleportCollision.h" />
+    <ClInclude Include="GameObject\EnergyOrbProjectile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Shaders\TriangleShaderFS.fs">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\Resources\Shaders\TriangleShaderVS.vs">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\..\Readme.doc" />
+  </ItemGroup>
+</Project>

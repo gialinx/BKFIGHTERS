@@ -1,0 +1,10 @@
+NewTrainingFramework/Include/** linguist-vendored
+NewTrainingFramework/SDL2/** linguist-vendored
+
+NewTrainingFramework/BIN/** linguist-generated
+NewTrainingFramework/NewTrainingFramework/Debug/** linguist-generated
+NewTrainingFramework/NewTrainingFramework/Release/** linguist-generated
+NewTrainingFramework/Utilities/Debug/** linguist-generated
+NewTrainingFramework/Utilities/Release/** linguist-generated
+NewTrainingFramework/ipch/** linguist-generated
+

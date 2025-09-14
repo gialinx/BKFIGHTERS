@@ -1,0 +1,835 @@
+# 2D Game Resources - Updated for Game State Machine
+
+#Model 2
+ID 0
+FILE "../Resources/Models/Sprite2D.nfg"
+
+ID 1
+FILE "../Resources/Models/Sprite2D.nfg"
+
+# 2DTexture 85
+ID 0
+FILE "../Resources/Fighter/Stages/Stage_1/NewBackground.tga"
+TILING GL_REPEAT
+
+ID 1  
+FILE "../Resources/Fighter/Stages/Stage_1/NewBackground.tga"
+TILING GL_REPEAT
+
+ID 2
+FILE "../Resources/Textures/btn_play.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 3
+FILE "../Resources/Textures/btn_help.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 4
+FILE "../Resources/Textures/btn_close.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 5
+FILE "../Resources/Fighter/UI/background_loading.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 6
+FILE "../Resources/Fighter/Bomb/Bomb1.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 7
+FILE "../Resources/Fighter/Bomb/Exploding_Bomb.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 11 1
+ANINUM 1
+* Animation 0
+0 11 50
+
+ID 8
+FILE "../Resources/Fighter/Characters/Player1_Head.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 3
+ANINUM 18
+* Animation 0: Reverse Pistol
+0 1 300
+* Animation 1: Pistol 
+1 1 300
+* Animation 2: Reverse M4A1
+2 1 300
+* Animation 3: M4A1
+3 1 300
+* Animation 4: Reverse Shotgun
+4 1 100
+* Animation 5: Shotgun
+5 1 300
+* Animation 6: Shotgun Reload 
+6 1 300
+* Animation 7: Throwing Hand
+7 1 300
+* Animation 8: Reverse Bazoka
+8 1 300
+* Animation 9: Bazoka
+9 1 300
+* Animation 10: Reverse FlameGun
+10 1 300
+* Animation 11: FlameGun
+11 1 300
+* Animation 12: Reverse Deagle
+12 1 300
+* Animation 13: Deagle
+13 1 300
+* Animation 14: Reverse Snipper
+14 1 300
+* Animation 15: Snipper
+15 1 300
+* Animation 16: Reverse Uzi
+16 1 300
+* Animation 17: Uzi 
+17 1 300
+
+ID 9
+FILE "../Resources/Fighter/Characters/Player2_Head.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 3
+ANINUM 18
+* Animation 0: Reverse Pistol
+0 1 300
+* Animation 1: Pistol 
+1 1 300
+* Animation 2: Reverse M4A1
+2 1 300
+* Animation 3: M4A1
+3 1 300
+* Animation 4: Reverse Shotgun
+4 1 100
+* Animation 5: Shotgun
+5 1 300
+* Animation 6: Shotgun Reload 
+6 1 300
+* Animation 7: Throwing Hand
+7 1 300
+* Animation 8: Reverse Bazoka
+8 1 300
+* Animation 9: Bazoka
+9 1 300
+* Animation 10: Reverse FlameGun
+10 1 300
+* Animation 11: FlameGun
+11 1 300
+* Animation 12: Reverse Deagle
+12 1 300
+* Animation 13: Deagle
+13 1 300
+* Animation 14: Reverse Snipper
+14 1 300
+* Animation 15: Snipper
+15 1 300
+* Animation 16: Reverse Uzi
+16 1 300
+* Animation 17: Uzi 
+17 1 300
+
+ID 10
+FILE "../Resources/Fighter/Characters/Player1_Body.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 16
+ANINUM 36
+* Animation 0: Idle
+0 4 300
+* Animation 1: Walk 
+4 4 300
+* Animation 2: Run
+8 4 300
+* Animation 3: Sit
+12 1 300
+* Animation 4: Roll
+13 2 100
+* Animation 5: Fly
+15 1 300
+* Animation 6: Climb Ladder
+16 4 300
+* Animation 7: No
+20 2 300
+* Animation 8: GetHit1
+22 1 300
+* Animation 9: GetHit2
+23 1 300
+* Animation 10: Punch1
+24 2 150
+* Animation 11: Punch2
+26 2 150
+* Animation 12: Punch3
+28 2 150
+* Animation 13: Knockdown
+30 1 300
+* Animation 14: Land 
+31 1 300
+* Animation 15: Lie 
+32 2 300
+* Animation 16: Jump 
+34 1 300
+* Animation 17: Air Kick 
+35 1 300
+* Animation 18: Die
+36 2 300
+* Animation 19: Kick  
+38 1 200
+* Animation 20: Axe1
+40 3 300
+* Animation 21: Axe2
+43 3 300
+* Animation 22: Axe3
+48 3 300
+* Animation 23: Sword1
+56 3 300
+* Animation 24: Sword2
+59 3 300
+* Animation 25: Sword3
+64 3 300
+* Animation 26: Pipe1
+72 3 300
+* Animation 27: Pipe2
+75 3 300
+* Animation 28: Pipe3
+80 3 300
+* Animation 29: Body Shoot
+88 1 300
+* Animation 30: Body Flamegun
+89 1 300
+* Animation 31: Body Grenade
+90 1 300
+* Animation 32: Body Molotov
+91 1 300
+* Animation 33: Throw
+92 1 300
+* Animation 34: Dont Know
+96 1 300
+* Animation 35: Hit By Rocket
+97 4 300
+
+ID 11
+FILE "../Resources/Fighter/Characters/Player2_Body.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 16
+ANINUM 36
+* Animation 0: Idle
+0 4 300
+* Animation 1: Walk 
+4 4 300
+* Animation 2: Run
+8 4 300
+* Animation 3: Sit
+12 1 300
+* Animation 4: Roll
+13 2 100
+* Animation 5: Fly
+15 1 300
+* Animation 6: Climb Ladder
+16 4 300
+* Animation 7: No
+20 2 300
+* Animation 8: GetHit1
+22 1 300
+* Animation 9: GetHit2
+23 1 300
+* Animation 10: Punch1
+24 2 150
+* Animation 11: Punch2
+26 2 150
+* Animation 12: Punch3
+28 2 150
+* Animation 13: Knockdown
+30 1 300
+* Animation 14: Land 
+31 1 300
+* Animation 15: Lie 
+32 2 300
+* Animation 16: Jump 
+34 1 300
+* Animation 17: Air Kick 
+35 1 300
+* Animation 18: Die
+36 2 300
+* Animation 19: Kick  
+38 1 200
+* Animation 20: Axe1
+40 3 300
+* Animation 21: Axe2
+43 3 300
+* Animation 22: Axe3
+48 3 300
+* Animation 23: Sword1
+56 3 300
+* Animation 24: Sword2
+59 3 300
+* Animation 25: Sword3
+64 3 300
+* Animation 26: Pipe1
+72 3 300
+* Animation 27: Pipe2
+75 3 300
+* Animation 28: Pipe3
+80 3 300
+* Animation 29: Body Shoot
+88 1 300
+* Animation 30: Body Flamegun
+89 1 300
+* Animation 31: Body Grenade
+90 1 300
+* Animation 32: Body Molotov
+91 1 300
+* Animation 33: Throw
+92 1 300
+* Animation 34: Dont Know
+96 1 300
+* Animation 35: Hit By Rocket
+97 4 300
+
+ID 12
+FILE "../Resources/Fighter/UI/Health.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 13
+FILE "../Resources/Textures/white_box.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 14
+FILE "../Resources/Textures/red_box.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 15
+FILE "../Resources/Textures/green_box.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 16
+FILE "../Resources/Fighter/Stages/Stage_1/background_1.tga"
+TILING GL_REPEAT
+
+ID 17
+FILE "../Resources/Fighter/Stages/Stage_1/background_2.tga"
+TILING GL_REPEAT
+
+ID 18
+FILE "../Resources/Fighter/Stages/Stage_1/background_3.tga"
+TILING GL_REPEAT
+
+ID 19
+FILE "../Resources/Fighter/UI/Fan.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 20
+FILE "../Resources/Fighter/UI/Lift_Platform.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 21
+FILE "../Resources/Textures/black_box.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 22
+FILE "../Resources/Fighter/UI/HUD_red_box.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 23
+FILE "../Resources/Fighter/UI/P1.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 24
+FILE "../Resources/Fighter/UI/P2.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 30
+FILE "../Resources/Fighter/Weapons/Axe.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 31
+FILE "../Resources/Fighter/Weapons/Sword.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 32
+FILE "../Resources/Fighter/Weapons/Pipe.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 33
+FILE "../Resources/Fighter/Weapons/Bullet.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 34
+FILE "../Resources/Fighter/Weapons/Bullet_Bazoka.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 40
+FILE "../Resources/Fighter/Gun/Pistol.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 41
+FILE "../Resources/Fighter/Gun/M4A1.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 42
+FILE "../Resources/Fighter/Gun/Shotgun.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 43
+FILE "../Resources/Fighter/Gun/Bazoka.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 44
+FILE "../Resources/Fighter/Gun/Flamegun.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 45
+FILE "../Resources/Fighter/Gun/Deagle.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 46
+FILE "../Resources/Fighter/Gun/Snipper.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 47
+FILE "../Resources/Fighter/Gun/Uzi.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 50
+FILE "../Resources/Fighter/UI/Blood_1.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 51
+FILE "../Resources/Fighter/UI/Blood_2.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 52
+FILE "../Resources/Fighter/UI/Blood_3.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 53
+FILE "../Resources/Fighter/Bomb/Bomb_HUD.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 54
+FILE "../Resources/Fighter/UI/Stamina.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 60
+FILE "../Resources/Fighter/Monster/Werewolf/WereWolf.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 8
+ANINUM 6
+* Animation 0: Idle
+0 8 1000
+* Animation 1: Combo 
+16 15 700
+* Animation 2: Run
+32 9 350
+* Animation 3: Pounce
+48 7 400
+* Animation 4: Walk
+64 11 700
+* Animation 5: Jump
+80 11 500
+
+ID 61
+FILE "../Resources/Fighter/Monster/BatDemon/BatDemon.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 4
+ANINUM 2
+* Animation 0: Fly
+0 9 550
+* Animation 1: Slash
+16 7 700
+
+ID 62
+FILE "../Resources/Fighter/Monster/Kitsune/Kitsune.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 8
+ANINUM 7
+* Animation 0: Idle
+0 8 750
+* Animation 1: Walk
+16 8 750
+* Animation 2: Run
+32 8 750
+* Animation 3: Energy orb
+48 7 700
+* Animation 4: Fade away
+64 10 1000
+* Animation 5: Fade in
+80 10 1000
+* Animation 6: Explode
+96 10 800
+
+ID 63
+FILE "../Resources/Fighter/Monster/Orc/Orc.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 4
+ANINUM 4
+* Animation 0: Idle
+0 5 500
+* Animation 1: Walk
+8 7 700
+* Animation 2: Meteor Strike
+16 6 600
+* Animation 3: Flame burst
+24 6 600
+
+ID 64
+FILE "../Resources/Fighter/UI/Lightning.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 32 1
+ANINUM 1
+* Animation 0: Lightning
+0 30 3000
+
+ID 65
+FILE "../Resources/Fighter/Monster/Kitsune/Fire_2.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 11 1
+ANINUM 2
+* Animation 0: Energy Ball
+0 5 500
+* Animation 1: Fade Away
+5 6 500
+
+ID 66
+FILE "../Resources/Fighter/Monster/Orc/FireRain.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 2
+ANINUM 2
+* Animation 0: Fire Rain
+0 6 500
+* Animation 1: Fade Away
+16 10 800
+
+ID 67
+FILE "../Resources/Fighter/Monster/Orc/Fire.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 1 25
+ANINUM 1
+* Animation 0: Fire
+0 25 3500
+
+ID 68
+FILE "../Resources/Fighter/Monster/BatDemon/Wind.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 8 1
+ANINUM 1
+* Animation 0: Wind
+0 6 500
+
+ID 70
+FILE "../Resources/Fighter/Stages/Stage_1/windWheel.tga"
+TILING GL_REPEAT
+
+ID 71
+FILE "../Resources/Fighter/Monster/Werewolf/Werewolf_Appear.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 1
+ANINUM 1
+* Animation 0: Werewolf Appear
+0 10 1000
+
+ID 72
+FILE "../Resources/Fighter/Monster/BatDemon/Batdemon_Appear.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 1
+ANINUM 1
+* Animation 0: Bat Demon Appear
+0 10 1000
+
+ID 73
+FILE "../Resources/Fighter/Monster/Kitsune/Kitsune_Appear.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 1
+ANINUM 1
+* Animation 0: Kitsune Appear
+0 10 1000
+
+ID 74
+FILE "../Resources/Fighter/Monster/Orc/Fire_Appear.tga"
+TILING GL_CLAMP_TO_EDGE
+SIZE 16 1
+ANINUM 1
+* Animation 0: Fire Orc Appear
+0 11 1000
+
+ID 75
+FILE "../Resources/Fighter/Monster/Werewolf/Werewolf_Item.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 76
+FILE "../Resources/Fighter/Monster/BatDemon/BatDemon_Item.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 77
+FILE "../Resources/Fighter/Monster/Kitsune/Kitsune_Item.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 78
+FILE "../Resources/Fighter/Monster/Orc/Orc_Item.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 79
+FILE "../Resources/Fighter/UI/Time.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 80
+FILE "../Resources/Fighter/UI/HealBox.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 81
+FILE "../Resources/Button/PlayAgain_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 82
+FILE "../Resources/Button/Home_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 83
+FILE "../Resources/Button/Exit_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 84
+FILE "../Resources/Button/Help_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 85
+FILE "../Resources/Button/Play_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 86
+FILE "../Resources/Button/Quit_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 87
+FILE "../Resources/Button/Resume_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 88
+FILE "../Resources/Button/Credits_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 89
+FILE "../Resources/Button/Settings_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 90
+FILE "../Resources/Textures/Settings.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 91
+FILE "../Resources/Textures/Credit.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 92
+FILE "../Resources/Textures/background_menu.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 93
+FILE "../Resources/Textures/BKFIGHTERS.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 94
+FILE "../Resources/Textures/Volumn_bar.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 95
+FILE "../Resources/Textures/Volumn_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 96
+FILE "../Resources/Button/Back_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 97
+FILE "../Resources/Textures/Credit_Menu.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 98
+FILE "../Resources/Textures/Tutorial_frame.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 99
+FILE "../Resources/Button/Next_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 100
+FILE "../Resources/Button/Prev_button.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 101
+FILE "../Resources/Tutorial/Tutorial1.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 102
+FILE "../Resources/Tutorial/Tutorial2.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 103
+FILE "../Resources/Tutorial/Tutorial3.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 104
+FILE "../Resources/Tutorial/Tutorial4.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 105
+FILE "../Resources/Tutorial/Tutorial5.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 106
+FILE "../Resources/Tutorial/Tutorial6.tga"
+TILING GL_CLAMP_TO_EDGE
+
+ID 107
+FILE "../Resources/Tutorial/Tutorial7.tga"
+TILING GL_CLAMP_TO_EDGE
+
+# Shader 1
+ID 0
+VS "../Resources/Shaders/TriangleShaderVS.vs"
+FS "../Resources/Shaders/TriangleShaderFS.fs" 
+
+# Shader 2 - Weapon Glint
+ID 1
+VS "../Resources/Shaders/TriangleShaderVS.vs"
+FS "../Resources/Shaders/WeaponGlint.fs"
+
+# Music
+ID 0
+NAME "menu"
+FILE "../Resources/Music/background_music.mp3"
+
+ID 1
+NAME "MeleePickup"
+FILE "../Resources/Music/MeleePickup.mp3"
+
+ID 2
+NAME "MetalGetHit"
+FILE "../Resources/Music/MetalGetHit.mp3"
+
+ID 3
+NAME "Roll"
+FILE "../Resources/Music/Roll.mp3"
+
+ID 4
+NAME "WallGetHit"
+FILE "../Resources/Music/WallGetHit.mp3"
+
+ID 5
+NAME "WoodGetHit"
+FILE "../Resources/Music/WoodGetHit.mp3"
+
+ID 6
+NAME "BodyGetHit"
+FILE "../Resources/Music/BodyGetHit.mp3"
+
+ID 7
+NAME "BombLoadnPickup"
+FILE "../Resources/Music/Bomb(LoadnPickup).mp3"
+
+ID 8
+NAME "Bomb"
+FILE "../Resources/Music/Bomb.mp3"
+
+ID 9
+NAME "Fall"
+FILE "../Resources/Music/Fall.mp3"
+
+ID 10
+NAME "GunDEagle"
+FILE "../Resources/Music/Gun(DEagle).mp3"
+
+ID 11
+NAME "GunLoadnPickup"
+FILE "../Resources/Music/Gun(LoadnPickup).mp3"
+
+ID 12
+NAME "GunM4A1"
+FILE "../Resources/Music/Gun(M4A1).mp3"
+
+ID 13
+NAME "GunPistol"
+FILE "../Resources/Music/Gun(Pistol).mp3"
+
+ID 14
+NAME "GunShotgun"
+FILE "../Resources/Music/Gun(Shotgun).mp3"
+
+ID 15
+NAME "GunSnipper"
+FILE "../Resources/Music/Gun(Snipper).mp3"
+
+ID 16
+NAME "GunUzi"
+FILE "../Resources/Music/Gun(Uzi).mp3"
+
+ID 17
+NAME "HealPickUp"
+FILE "../Resources/Music/HealPickUp.mp3"
+
+ID 18
+NAME "Jump"
+FILE "../Resources/Music/Jump.mp3"
+
+ID 19
+NAME "Melee1"
+FILE "../Resources/Music/Melee1.mp3"
+
+ID 20
+NAME "Melee2"
+FILE "../Resources/Music/Melee2.mp3"
+
+ID 21
+NAME "Melee3"
+FILE "../Resources/Music/Melee3.mp3"
+
+ID 22
+NAME "backgroundNoise"
+FILE "../Resources/Music/backgroundNoise.mp3"
+
+ID 23
+NAME "Gun_Bazoka_Flamegun(LoadnPickup)"
+FILE "../Resources/Music/Gun_Bazoka_Flamegun(LoadnPickup).mp3"
+
+ID 24
+NAME "Gun(Bazoka)"
+FILE "../Resources/Music/Gun(Bazoka).mp3"
+
+ID 25
+NAME "Kitsune_Lightning"
+FILE "../Resources/Music/Kitsune_Lightning.mp3"
+
+ID 26
+NAME "Kitsune_Orc_Fire_Appear"
+FILE "../Resources/Music/Kitsune_Orc_Fire_Appear.mp3"
+
+ID 27
+NAME "Orc_explosion"
+FILE "../Resources/Music/Orc_explosion.mp3"
+
+ID 28
+NAME "Orc_Fire"
+FILE "../Resources/Music/Orc_Fire.mp3"
+
+ID 29
+NAME "Werewolf_BatDemon_Appear"
+FILE "../Resources/Music/Werewolf_BatDemon_Appear.mp3"
+
+ID 30
+NAME "Werewolf_Batdemon_sword"
+FILE "../Resources/Music/Werewolf_Batdemon_sword.mp3"
+
+ID 31
+NAME "Wereworf_breathing"
+FILE "../Resources/Music/Wereworf_breathing.mp3"
+
+ID 32
+NAME "Wing_flap"
+FILE "../Resources/Music/Wing_flap.mp3"
+
+ID 33
+NAME "Button Click"
+FILE "../Resources/Music/Button_click.mp3"
+
+ID 34
+NAME "Wind"
+FILE "../Resources/Music/Wind.mp3"
+
