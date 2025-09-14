@@ -101,8 +101,11 @@
 - **Special Form**: 4 key (Transform into special character)
 
 ## 📞 Contact
+- **Developer1**: Vu Quyen Gia Linh
+- **Email**: gialinx@gmail.com
+- **GitHub**: https://github.com/gialinx
 
-- **Developer**: Trinh Huu An
+- **Developer2**: Trinh Huu An
 - **Email**: trinhhuuan372@gmail.com
 - **GitHub**: https://github.com/Carbon2301
 
